@@ -68,10 +68,10 @@ fun AdvancedDrawingDemoScreen() {
     var pathUpdateTrigger by remember { mutableIntStateOf(0) }
 
     // **Load ảnh pattern ngôi sao** (đã tạo ở res/drawable/ic_star_pattern.xml)
-    //val starBitmap = ImageBitmap.imageResource(id = R.drawable.ic_star_pattern)
-    val starBitmap = remember {
-        getBitmapFromVectorDrawable(context, R.drawable.ic_star_pattern)
-    }
+     val starBitmap = ImageBitmap.imageResource(id = R.drawable.test)
+//    val starBitmap = remember {
+//        getBitmapFromVectorDrawable(context, R.drawable.ic_star_pattern)
+//    }
 
     Column(modifier = Modifier.fillMaxSize()) {
         // --- Thanh công cụ (Top Bar) - 4 OPTIONS ---
